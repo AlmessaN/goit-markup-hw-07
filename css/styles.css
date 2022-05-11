@@ -889,9 +889,9 @@ border-radius: 4px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
-  background: rgba(0, 0, 0, 0.15);
+  background: 50%;
   border-radius: 4px;
-  filter: drop-shadow(0px 4px 4px);
+  color: #ffffff;
 }
 .button_email {
   display: flex;
@@ -922,12 +922,12 @@ border-radius: 4px;
   display: flex;
 }
 .title_modal {
-  padding-bottom: 12px;
+  margin-bottom: 12px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15px;
+  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121
@@ -944,6 +944,7 @@ border-radius: 4px;
 }
 .modal_name {
   display: flex;
+  position: relative;
   flex-wrap: nowrap;
   flex-direction: column;
   align-items: flex-start;
@@ -1009,6 +1010,7 @@ border-radius: 4px;
 }
 .modal_tel {
   display: flex;
+  position: relative;
   flex-wrap: nowrap;
   flex-direction: column;
   align-items: flex-start;
@@ -1016,6 +1018,7 @@ border-radius: 4px;
 }
 .modal_email {
   display: flex;
+  position: relative;
   flex-wrap: nowrap;
   flex-direction: column;
   align-items: flex-start;
@@ -1075,9 +1078,23 @@ color: #757575;
   margin-left: 5px;
 }
 .checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   width: 16px;
   height: 15px;
   margin-right: 8.38px;
+  border: 2px solid #212121 ;
+  border-radius: 2px;
+}
+.checkbox:checked {
+  width: 16px;
+  height: 15px;
+  border-color: #2196F3;
+  background-image: url("/images/icon-check.svg");
+  background-color: #2196F3;
+  background-size: contain;
+  background-origin: border-box;
 }
 .submit {
 display: flex;
@@ -1111,8 +1128,8 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 12px;
   height: 12px;
   fill: #212121;
-  left: 11%;
-  top: 16.67%;
+  left: 15px;
+  top: 32px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .name_icon:hover {
@@ -1134,8 +1151,8 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 13px;
   height: 13px;
   fill: #212121;
-  left: 11%;
-  top: 28%;
+  left: 15px;
+  top: 32px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .tel-icon:hover {
@@ -1157,8 +1174,8 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 15px;
   height: 12px;
   fill: #212121;
-  left: 11%;
-  top: 40%;
+  left: 15px;
+  top: 32px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .email_icon:hover {
