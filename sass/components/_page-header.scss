@@ -1,7 +1,7 @@
-  .hero {
+  .header {
     display: flex;
-    align-items: center;
     width: 1200px;
+    justify-content: center;
     margin: 0 auto;
     padding-left: 10px;
     padding-right: 10px;
@@ -9,10 +9,10 @@
   .hero-sec {
     border-bottom: 1px solid #ECECEC;
   }
-  .navigation> li {
+  .list__item {
     margin-right: 50px;
   }
-  .menu-link {
+  .list__item--link {
     position: relative;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -21,8 +21,16 @@
     line-height: 1.17;
     word-spacing: 50px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      color:#2196F3;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &:focus {
+      color:#2196F3;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
-  .menu-link.current::after {
+  .list__item--link.current::after {
     display: block;
     position: absolute;
     background-color:#2196F3;
@@ -36,21 +44,10 @@
   .current {
     color:#2196F3;
   }
-  .navigation> li:nth-child(3) {
+  .list__item:nth-child(3) {
     margin-right: 0;
   }
-  .menu-link:hover {
-    color:#2196F3;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .menu-link:focus {
-    color:#2196F3;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .hero nav {
-    display: flex;
-  }
-  .hero_ nav {
+  .main-nav {
     display: flex;
   }
   .adresat {
@@ -58,15 +55,12 @@
     align-items: center;
     margin-left: auto;
   }
-.navigation {
+.list {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
   margin-left: 93px;
-}
-.navigation .cont {
-  margin-right: 0;
 }
 .mail {
   display: flex;
@@ -78,23 +72,30 @@
   text-decoration: none;
   margin-right: 50px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    color: #2196F3;
+  }
+  &:focus {
+    color: #2196F3;
+  }
 }
-.mail:hover {
-  color: #2196F3;
-}
-.mail:focus {
-  color: #2196F3;
-}
-.mail_icon {
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.mail:hover .mail_icon {
+.mail:hover .mail-icon {
   fill: #2196F3;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mail:focus .mail_icon {
-  fill: #2196F3;
+.mail-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: #757575;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    fill: #2196F3;
+  }
+  &:focus {
+    fill: #2196F3;
+  }
 }
 .tel {
   font-family: 'Roboto', sans-serif;
@@ -104,21 +105,28 @@
   line-height: 1.17;
   text-decoration: none;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    color: #2196F3;
+  }
+  &:focus {
+    color: #2196F3;
+  }
 }
-.tel:hover {
-  color: #2196F3;
+.tel:hover .tel--icon {
+  fill:#2196F3;
 }
-.tel_icon {
+.tel--icon {
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.tel:hover .tel_icon {
-  fill: #2196F3;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.tel:focus {
-  color: #2196F3;
-}
-.tel:focus .tel_icon {
-  fill: #2196F3;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #757575;
+
+  &:hover {
+    fill: #2196F3;
+  }
+  &:focus {
+    fill: #2196F3;
+  }
 }

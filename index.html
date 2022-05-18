@@ -15,29 +15,29 @@
 
 </head>
 <body>
-    <header >
-        <div class="hero">
-    <nav>
-        <a href="/" class="studio"><span class="web">Web</span>Studio</a>
-        <ul class="navigation">
-            <li class="active">
-                <a class="menu-link current" href="./index.html">Студія</a>
+    <header>
+        <div class="header">
+    <nav class="main-nav">
+        <a href="/" class="main-nav__logo"><span class="main-nav__logo main-nav__logo--change">Web</span>Studio</a>
+        <ul class="list">
+            <li class="list__item">
+                <a class="list__item--link current" href="./index.html">Студія</a>
             </li>
-            <li class="active">
-                <a class="menu-link" href="./portfolio.html">Портфоліо</a>
+            <li class="list__item">
+                <a class="list__item--link" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li class="active">
-                <a class="menu-link " href="url">Контакти</a>
+            <li class="list__item">
+                <a class="list__item--link" href="url">Контакти</a>
             </li>
         </ul>
     </nav>
     <div class="adresat">
         <a href="mailto:info@devstudio.com" class="mail"> 
-        <svg class="mail_icon">
+        <svg class="mail-icon">
             <use href="./images/icons.svg#envelope"></use>
         </svg>info@devstudio.com</a>
         <a href="tel:+380961111111" class="tel">
-            <svg class="tel_icon">
+            <svg class="tel--icon">
                 <use href="./images/icons.svg#smartphone-1"></use>
             </svg>+380961111111</a>
     </div>
@@ -45,8 +45,8 @@
     </header>
     <main>
         <section class="button-use">
-            <div class="container">
-                <h1 class="title">ЕФЕКТИВНІ ПОРАДИ ДЛЯ<br>ВАШОГО БІЗНЕСУ</h1>
+            <div class="imposter">
+                <h1 class="imposter__title">ЕФЕКТИВНІ ПОРАДИ ДЛЯ<br>ВАШОГО БІЗНЕСУ</h1>
                 <button data-modal-open class="button" type="button">Замов. послугу</button>
                 <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
@@ -93,38 +93,38 @@
             </div>
         </section>
             <section class="section">
-                <div class="container_second">
-                <ul class="details">
-                    <li class="detail"> 
-                        <div class="title_size"><svg class="title_icon">
+                <div class="container">
+                <ul class="list-detail">
+                    <li class="list-detail__item"> 
+                        <div class="list-detail__figure"><svg class="list-detail__icon">
                             <use href="./images/icons.svg#antenna-1"></use> </svg></div>
-                        <h3 class="title-first">УВАГА ДО ДЕТАЛЕЙ</h3>
-                        <p class="text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+                        <h3 class="list-detail__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+                        <p class="list-detail__sabtitle">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
                     </li>
-                    <li class="detail">                        
-                        <div class="title_size"><svg class="title_icon">
+                    <li class="list-detail__item">                        
+                        <div class="list-detail__figure"><svg class="list-detail__icon">
                             <use href="./images/icons.svg#clock-1"></use></svg></div>
-                        <h3 class="title-first">ПУНКТУАЛЬНІСТЬ</h3>
-                        <p class="text">Завдання організації, особливо рамки і місце навчання кадрів тягне за собою.</p>
+                        <h3 class="list-detail__title">ПУНКТУАЛЬНІСТЬ</h3>
+                        <p class="list-detail__sabtitle">Завдання організації, особливо рамки і місце навчання кадрів тягне за собою.</p>
                     </li>
-                    <li class="detail">    
-                        <div class="title_size"><svg class="title_icon">
+                    <li class="list-detail__item">    
+                        <div class="list-detail__figure"><svg class="list-detail__icon">
                             <use href="./images/icons.svg#diagram-1"></use></svg></div>
-                            <h3 class="title-first">ПЛАНУВАННЯ</h3>
-                        <p class="text">Так само консультація з широким активом значно обумовлює.</p>
+                            <h3 class="list-detail__title">ПЛАНУВАННЯ</h3>
+                        <p class="list-detail__sabtitle">Так само консультація з широким активом значно обумовлює.</p>
                     </li>
-                    <li class="detail">    
-                        <div class="title_size"><svg class="title_icon">
+                    <li class="list-detail__item">    
+                        <div class="list__figure"><svg class="list__icon">
                             <use href="./images/icons.svg#astronaut-1"></use></svg></div>
-                        <h3 class="title-first">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                        <p class="text">Значимість цих проблем є настільки очевидною, що реалізація планових завдань</p>
+                        <h3 class="list__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                        <p class="list__sabtitle">Значимість цих проблем є настільки очевидною, що реалізація планових завдань</p>
                     </li>
                 </ul>
             </div>
             </section>
-        <section class="section">
-            <div class="container_second">
-            <h2>Чим ми займаємось</h2>
+        <section class="section section-about">
+            <div class="container">
+            <h2 class="container__title">Чим ми займаємось</h2>
             <ul class="photo">
                 <li class="images">
                     <img src="images/programer-desk-office.jpg" 
@@ -153,9 +153,9 @@
                 </ul>
             </section>
         </div>
-        <section class="section">
-            <div class="container_second">
-            <h2>Наша команда</h2>
+        <section class="section section-team">
+            <div class="container">
+            <h2 class="container__title">Наша команда</h2>
             <ul class="name">
                 <li>
                     <img src="images/smiling-man.jpg" 
@@ -252,9 +252,9 @@
             </ul>
             </div>
         </section>
-        <section class="section">
-            <div class="container_second">
-                <h2>Постійні клієнти</h2>
+        <section class="section section-client">
+            <div class="container">
+                <h2 clascc="container__title">Постійні клієнти</h2>
                 <ul class="client_">
                     <li class="client-">
                         <a href="#" alt="ya_go" class="client">
@@ -301,7 +301,7 @@
                 </ul>
     </main>
     <footer class="footer">
-        <div class="container_second">
+        <div class="container">
             <ul class="footer_end">
                 <li>
         <a href="url" class="studioo"><span class="web">Web</span>Studio</a>
