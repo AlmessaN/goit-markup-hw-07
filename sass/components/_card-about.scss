@@ -1,15 +1,15 @@
-.photo {
+.list-about {
     display: flex;
     margin-top: 50px;
   }
-  .images {
+  .list-about__item {
     position: relative;
     margin-right: 30px;
   }
-  .images:last-child {
+  .list-about__item:last-child {
     margin-right: 0;
   }
-  .images-before {
+  .list-about__item-before {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -21,7 +21,7 @@
     width: 370px;
     background: rgba(47, 48, 58, 0.8);
   }
-  .title-images {
+  .list-about__title {
     font-family: 'Roboto';
     font-style: normal;
     color: #FFFFFF;

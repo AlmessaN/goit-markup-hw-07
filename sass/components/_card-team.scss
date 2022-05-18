@@ -1,7 +1,7 @@
-.name {
+.list-team {
     margin-top: 50px;
   }
-  .name li {
+  .list-team__item {
     background: #FFFFFF;
     float: left;
     width: 270;
@@ -10,18 +10,13 @@
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   }
-  .name li:last-child {
+  .list-team__item:last-child {
     margin-right: 0;
   }
-  .name >li >h3 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    color: #212121;
-    font-size: 16px;
-    line-height: 1.12;
-    margin-top: 30px;
+  .list-team__figure {
+    padding-top: 30px;
   }
-  .profession {
+  .list-team__text {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: #757575;
@@ -38,7 +33,7 @@
     line-height: 1.8;
     text-decoration: none;
   }
-  .title-second_stud {
+  .list-team__title {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -87,38 +82,34 @@
   .ellipse:hover .social-twitter {
     background-color: #2196F3;
     fill:#FFFFFF;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .ellipse:hover .social-facebook {
     background-color: #2196F3;
     fill:#FFFFFF;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }.ellipse:hover .social-linkedin {
+  }
+  .ellipse:hover .social-linkedin {
     background-color: #2196F3;
     fill:#FFFFFF;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }.ellipse:hover .social-insta {
+  }
+  .ellipse:hover .social-insta {
     background-color: #2196F3;
     fill:#FFFFFF;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .ellipse:focus .social-twitter {
     background-color: #2196F3;
     fill:#FFFFFF;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .ellipse:focus .social-facebook {
     background-color: #2196F3;
     fill:#FFFFFF;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }.ellipse:focus .social-linkedin {
+  }
+  .ellipse:focus .social-linkedin {
     background-color: #2196F3;
     fill:#FFFFFF;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }.ellipse:focus .social-insta {
+  }
+  .ellipse:focus .social-insta {
     background-color: #2196F3;
     fill:#FFFFFF;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .social-twitter {
     fill:#AFB1B8;
