@@ -1,16 +1,19 @@
-@import "./components/backdrop";
-@import "./components/buttons";
-@import "./components/card-about";
 
-@import "./components/card-client";
-@import "./components/card-database";
-@import "./components/card-details";
-
-@import "./components/card-team";
-@import "./components/logo";
-@import "./components/page-footer";
-
+@import "./components/basic";
 @import "./components/page-header";
-@import "./components/base";
-@import "./components/container";
-@import "./components/section";
+@import "./components/main";
+
+@import "./components/imposter";
+@import "./components/buttons";
+
+@import "./components/details";
+@import "./components/about";
+@import "./components/team";
+
+@import "./components/clients";
+@import "./components/footer";
+@import "./components/backdrop";
+
+@import "./components/page-portfolio";
+
+

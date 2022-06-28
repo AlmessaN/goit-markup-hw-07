@@ -1,0 +1,135 @@
+.footer {
+    background: #2F303A;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+.footer__container {
+    display: flex;
+}
+.footer__list {
+    display: flex;
+    align-items: baseline;
+}
+.footer__item-card {
+    padding-right: 93px;
+}
+.footer__cart {
+    padding-right: 70px;
+}
+.main-nav__title-change {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 26px;
+    line-height: 1.15;
+}
+.footer__adress {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    width: 231px;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 1.7;
+    text-decoration: none;
+    font-style: normal;
+    margin-top: 20px;
+    margin-bottom: 9px;
+    flex-direction: column;
+}
+.footer__contacts {
+    margin-bottom: 9px;
+}
+.footer__contakts-maill {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    width: 231px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 1.7;
+    text-decoration: none;
+    font-style: normal;
+}
+.footer__contakts-tell {
+    font-family: 'Roboto', sans-serif;
+    width: 231px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 1.7;
+    text-decoration: none;
+    font-style: normal;
+}
+.footer__title {
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 0.8;
+}
+.footer__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.footer__social {
+    text-align: center;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    width: 44px;
+    height: 44px;
+    border-radius: 50px/50px;
+    margin-right: 10px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__social-logo {
+    fill: #ffffff;
+    width: 20px;
+    height: 20px;
+    margin: 12px auto;
+}
+.footer__block {
+    display: flex;
+    margin-top: 20px;
+}
+.footer__form {
+    display: flex;
+}
+.footer__form-email {
+}
+.footer__form-block {
+    padding-left: 16px;
+    margin-right: 12px;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    background: 50%;
+    border-radius: 4px;
+    color: #ffffff;
+}
+.footer__button {
+    display: flex;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    width: 200px;
+    height: 50px;
+    background: #2196F3;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, .15);
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.footer__button-send {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    fill: #FFFFFF;
+}

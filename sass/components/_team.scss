@@ -1,0 +1,72 @@
+.team {
+    display: flex;
+    background-color: #F5F4FA;
+    align-content: center;
+    margin: 0 auto;
+    padding: 94px 0;
+}
+.team__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    margin: auto;
+    text-align: center;
+}
+.team__list {
+    margin-top: 50px;
+}
+.team__item {
+    background: #FFFFFF;
+    float: left;
+    margin-right: 30px;
+    text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, .12%), 0px 1px 1px rgba(0, 0, 0, .14%), 0px 2px 1px rgba(0, 0, 0, .20%);
+    border-radius: 0px 0px 4px 4px;
+}
+.team__item :last-child {
+    margin-right: 0;
+}
+.team__about {
+    padding-top: 30px;
+}
+.team__about-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+}
+.team__about-profecion {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #757575;
+    font-size: 16px;
+    line-height: 1.18;
+    margin-top: 10px;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 206px;
+    height: 44px;
+    margin: 16px 32px 30px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ellipse {
+    text-align: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50px/50px;
+    margin-right: 10px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-logo {
+    fill: #AFB1B8;
+    width: 20px;
+    height: 20px;
+    margin: 12px auto;
+}

@@ -1,31 +1,32 @@
-.button {
-  display: block;
-  cursor: pointer;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  width: 200px;
-  height: 50px;
-  background: #2196F3;
-  color: #ffffff;
-  font-size: 16px;
-  line-height: 1.8;
-  letter-spacing: 0.06em;
-  border-radius: 4px;
-  margin: 30px auto 0;
-  text-align: center;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+.imposter__button {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    width: 200px;
+    height: 50px;
+    background: #2196F3;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    margin: 30px auto 0;
+    text-align: center;
+    box-shadow: 0px 4px 4px, rgb (0 0 0 / 15%);
 }
-.buttons {
+
+.page__buttons {
+    padding-top:94px;
     display: flex;
     justify-content: center;
-  }
-  .buttons-chapters {
-    margin-right: 8px;
-  }
-  .buttons-chapters:nth-child(5) {
+}
+.page__buttons :last-child {
     margin-right: 0;
-  }
-  .button_chapters {
+}
+.buttons__list {
+    margin-right: 8px;
+}
+.button__chapter {
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
@@ -35,16 +36,4 @@
     border-radius: 4px;
     padding: 6px 22px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .button_chapters:hover {
-    background: #2196F3;
-    color: #ffffff;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .button_chapters:focus {
-    background: #2196F3;
-    color: #ffffff;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+}

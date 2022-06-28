@@ -1,27 +1,38 @@
-.list-about {
+
+.about {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.about__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    margin: auto;
+    text-align: center;
+}
+.about__list {
     display: flex;
     margin-top: 50px;
-  }
-  .list-about__item {
+}
+.about__item {
     position: relative;
     margin-right: 30px;
-  }
-  .list-about__item:last-child {
-    margin-right: 0;
-  }
-  .list-about__item-before {
+}
+.about__before {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
     position: absolute;
-    top:224px;
+    top: 224px;
     right: 0;
     height: 70px;
     width: 370px;
     background: rgba(47, 48, 58, 0.8);
-  }
-  .list-about__title {
+}
+.about__before-title {
     font-family: 'Roboto';
     font-style: normal;
     color: #FFFFFF;
@@ -29,4 +40,4 @@
     font-size: 14px;
     line-height: 0.8;
     text-align: center;
-  }
+}
