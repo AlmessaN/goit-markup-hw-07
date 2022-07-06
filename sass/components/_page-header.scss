@@ -69,7 +69,11 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.8;
-    color: #212121;
+    color: #212121; 
+    &:hover, &:focus {
+        color:#2196F3;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
 .main-nav__contacts {
     display: flex;
@@ -85,6 +89,11 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     line-height: 16px;
     letter-spacing: 0.8;
     color: #757575;
+   &:hover, &:focus {
+        color:#2196F3;
+        fill:#2196F3;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
 .mail-icon {
     width: 16px;
@@ -100,6 +109,11 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     line-height: 16px;
     letter-spacing: 0.8;
     color: #757575;
+    &:hover, &:focus {
+        color:#2196F3;
+        fill:#2196F3;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
 .tel__icon {
     width: 10px;

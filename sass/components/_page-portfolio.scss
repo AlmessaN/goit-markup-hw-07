@@ -17,17 +17,12 @@
     margin-bottom: 30px;
     margin-right: 30px;
     border: 1px solid #EEEEEE;
+    &:hover .page__after-text .page__image-link {
+        transform: translateY(0);
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
 }
-.page__image {
-    :hover .page__after-text {
-    transform: translateY(0);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);}
-}
-.page__image-link :hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    :nth-child(1n) {box-shadow: none;}
-}
-
 .page__after {
     position: relative;
     overflow: hidden;

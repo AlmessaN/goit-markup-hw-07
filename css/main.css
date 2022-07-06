@@ -171,6 +171,12 @@ textarea {
   color: #212121;
 }
 
+.menu__link:hover, .menu__link:focus {
+  color: #2196F3;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .main-nav__contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -192,6 +198,13 @@ textarea {
   color: #757575;
 }
 
+.mail:hover, .mail:focus {
+  color: #2196F3;
+  fill: #2196F3;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .mail-icon {
   width: 16px;
   height: 12px;
@@ -207,6 +220,13 @@ textarea {
   line-height: 16px;
   letter-spacing: 0.8;
   color: #757575;
+}
+
+.tel:hover, .tel:focus {
+  color: #2196F3;
+  fill: #2196F3;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tel__icon {
@@ -292,6 +312,13 @@ textarea {
   letter-spacing: 0.03em;
   border-radius: 4px;
   padding: 6px 22px;
+}
+
+.button__chapter:hover, .button__chapter:focus {
+  background: #2196F3;
+  color: #ffffff;
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1120,21 +1147,13 @@ textarea {
   border: 1px solid #EEEEEE;
 }
 
-.page__image :hover .page__after-text {
+.page__image:hover .page__after-text .page__image-link {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.page__image-link :hover {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.page__image-link :hover :nth-child(1n) {
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 
 .page__after {
