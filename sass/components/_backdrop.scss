@@ -5,7 +5,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.2);
+    background: $backdropColor;
     z-index: 1;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -20,23 +20,20 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background-color: #FFFFFF;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 12%), 0px 1px 1px rgba(0, 0, 0, 14%), 0px 2px 1px rgba(0, 0, 0, 20%);
-    border-radius: 4px;
+    background-color: $simpleColor;
+    @include shadow-modal;
 }
-.ellise-cross {
+.elipse-cross {
+    @include elipse-modal;
     width: 30px;
     height: 30px;
-    border-radius: 50px/50px;
     margin-top: 8px;
     margin-left: 490px;
     margin-right: 8px;
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
+    background: $simpleColor;
 }
 .cross {
-    fill: #000000;
+    fill: $blackColor;
     width: 11px;
     height: 11px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -49,15 +46,10 @@
     align-items: center;
 }
 .modal__title {
+    @include font (Roboto, 700, 20px, 1.15, 0.03em);
     margin-bottom: 12px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
     text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
+    color: $titleColor;
 }
 .modal__name {
     display: flex;
@@ -68,29 +60,22 @@
     margin-top: 12px;
 }
 .name__modal {
+    @include font (Roboto, 400, 12px, 1.16, 0.01em);
     margin-bottom: 4px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    color: #757575;
+    color: $nameColor;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-name {
     padding-left: 42px;
     height: 40px;
     width: 448px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include modal;
 }
 .name__icon {
     position: absolute;
     width: 12px;
     height: 12px;
-    fill: #212121;
+    fill: $titleColor;
     left: 15px;
     top: 32px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -107,15 +92,13 @@
     padding-left: 42px;
     height: 40px;
     width: 448px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include modal;
 }
 .tel-icon {
     position: absolute;
     width: 13px;
     height: 13px;
-    fill: #212121;
+    fill: $titleColor;
     left: 15px;
     top: 32px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -132,15 +115,13 @@
     padding-left: 42px;
     height: 40px;
     width: 448px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include modal;
 }
 .email_icon {
     position: absolute;
     width: 15px;
     height: 12px;
-    fill: #212121;
+    fill: $titleColor;
     left: 15px;
     top: 32px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -153,20 +134,13 @@
     margin-top: 10px;
 }
 .modal-comment {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
+    @include font (Roboto, 400, 12px, 1.16, 0.01em);
+    color: $commentColor;
     padding-top: 12px;
     padding-left: 16px;
     width: 448px;
     height: 120px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include modal;
 }
 .modal__check {
     display: flex;
@@ -178,49 +152,37 @@
     width: 16px;
     height: 15px;
     margin-right: 8.38px;
-    border: 2px solid #212121;
-    border-radius: 2px;
+    @include checkbox;
 }
 .checkbox:checked {
     width: 16px;
     height: 15px;
-    border-color: #2196F3;
+    border-color: $primaryColor;
     background-image: url("/images/icon-check.svg");
-    background-color: #2196F3;
+    background-color: $primaryColor;
     background-size: contain;
     background-origin: border-box;
   }
 .check {
     display: flex;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    color: #757575;
+    @include font (Roboto, 400, 14px, 1.7, 0.03em);
+    color: $nameColor;
 }
 .conditions {
     text-decoration: underline;
-    color: #2196F3;
+    color: $primaryColor;
     margin-left: 5px;
 }
 .submit {
+    @include border-btn;
+    @include font (Roboto, 700, 16px, 1.8, 0.06em);
     display: flex;
     justify-content: center;
     align-items: center;
     width: 200px;
     height: 50px;
-    background: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 15%);
-    border-radius: 4px;
+    background: $primaryColor;
     margin-top: 30px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.8;
-    letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: $simpleColor;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
