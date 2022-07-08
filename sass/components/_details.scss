@@ -20,7 +20,7 @@
     flex-direction: row;
     align-content: center;
     justify-content: center;
-    background-color: #F5F4FA;
+    background-color: $btn-Color;
     height: 120px;
     margin-bottom: 30px;
     transition: 250ms cubic-bezier (0.4, 0, 0.2, 1);
@@ -31,18 +31,11 @@
     height: 70px;
 }
 .details__title {
-    font-family: 'Roboto';
-    font-style: normal;
+    @include font (Roboto, 700, 14px, 0.8, 0.03em);
     color: #212121;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 0.8;
 }
 .details__text {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    color: #757575;
-    font-size: 14px;
-    line-height: 1.7;
+    @include font (Roboto, 400, 14px, 1.7, 0.03em);
+    color: $nameColor;
     margin-top: 10px;
 }

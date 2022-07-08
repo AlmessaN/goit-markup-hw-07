@@ -4,7 +4,7 @@
 
 }
 .header__border {
-border-bottom: 1px solid #ECECEC;
+border-bottom: 1px solid $border-headerColor;
 }
 .header__container {
     display: flex;
@@ -17,12 +17,12 @@ border-bottom: 1px solid #ECECEC;
     
 }
 .current {
-    color: $primariColor;
+    color: $basicColor;
 }
 .menu__link.current::after {
 display: block;
 position: absolute;
-background-color: $primariColor;
+background-color: $basicColor;
 height: 4px;
 width: 100%;
 margin-top: 28px;
@@ -31,23 +31,13 @@ content: "";
 transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .main-nav__title {
+    @include font (Raleway, 700, 26px, 1.15, 0.03em);
     margin-right: 93px;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.83;
-    color: #212121;
+    color: $titleColor;
 }
 .main-nav__logo {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.83;
-    color: $primariColor;
+    @include font (Raleway, 700, 26px, 1.15, 0.03em);
+    color: $basicColor;
 }
 .menu__list {
     display: flex;
@@ -62,16 +52,11 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-right: 50px;
 }
 .menu__link {
+    @include font (Roboto, 500, 14px, 1.14, 0.02em);
     position: relative;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.8;
     color: $titleColor;
     &:hover, &:focus {
-        color: $primariColor;
+        color: $basicColor;
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
@@ -81,17 +66,12 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-left: auto;
 }
 .mail {
+    @include font (Roboto, 500, 14px, 1.14, 0.02em);
     margin-right: 30px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.8;
     color: $nameColor;
    &:hover, &:focus {
-        color:$primariColor;
-        fill:$primariColor;
+        color:$basicColor;
+        fill:$basicColor;
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
@@ -101,17 +81,12 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-right: 10px;
 }
 .tel {
+    @include font (Roboto, 500, 14px, 1.14, 0.02em);
     margin-right: 30px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.8;
     color: $nameColor;
     &:hover, &:focus {
-        color:$primariColor;
-        fill:$primariColor;
+        color:$basicColor;
+        fill: $basicColor;
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
