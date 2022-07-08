@@ -4,7 +4,7 @@
     display: block;
     width: 200px;
     height: 50px;
-    background: $primaryColor;
+    background: $primariColor;
     color: $simpleColor;
     margin: 30px auto 0;
     text-align: center;
@@ -27,7 +27,7 @@
     background: $btn-Color;
     padding: 6px 22px;
     &:hover, &:focus {
-        background: $primaryColor;
+        background: $primariColor;
         color: $simpleColor;
         @include shadow-btn;
     }
